@@ -19,4 +19,13 @@ fun main() {
     println(ano)
     ano = 2021.toString()
     println(ano)
+
+    /*
+    Qualquer tipo pode ser nulo, porém isso deveser explicitado na
+    dealaração da variável através do uso da interrogação
+*/
+    var month:Int? = null
+
+    // var day:Int = null   -->     Erro de compilação
+
 }
