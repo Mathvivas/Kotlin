@@ -30,7 +30,7 @@ class Operacoes {
         println("${prim} + ${seg} = ${soma}")
     }
 
-    fun substrac() {
+    fun subtrac() {
         var sub: Float
         var prim: Float
         var seg: Float
