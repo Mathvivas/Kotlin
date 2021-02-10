@@ -3,8 +3,6 @@ class Sistema {
     fun run() {
 
         var op: String?
-        var primeiroValor: Float
-        var segundoValor: Float
 
         do {
             op = Menu().menu()
