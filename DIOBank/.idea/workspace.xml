@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="572e35b1-35dc-443c-83b9-c55c90b3fe13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/maua/testes/AnalistaTeste.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/maua/Gerente.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/maua/testes/GerenteTeste.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Basic/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Basic/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Basic/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Basic/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -75,7 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.AnalistaTesteKt">
+  <component name="RunManager" selected="Application.GerenteTesteKt">
     <configuration name="AnalistaTesteKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="mainModule" />
       <option name="VM_PARAMETERS" />
@@ -102,6 +103,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GerenteTesteKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="mainModule" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="br.maua.testes.GerenteTesteKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PessoaKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="mainModule" />
       <option name="VM_PARAMETERS" />
@@ -117,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GerenteTesteKt" />
         <item itemvalue="Application.AnalistaTesteKt" />
         <item itemvalue="Application.ClienteTipoTesteKt" />
         <item itemvalue="Application.PessoaKt" />
