@@ -1,6 +1,6 @@
 class Menu() {
 
-    fun menu() {
+    fun menu():Int {
         println("|=======| MENU |=======")
         println("| 1 - Soma")
         println("|")
@@ -16,5 +16,10 @@ class Menu() {
         println("|")
         println("| 0 - Sair")
         println("|======================")
+
+        println("\nDigite a operação desejada: ")
+        val op = readLine()!!.toInt()
+
+        return op
     }
 }
