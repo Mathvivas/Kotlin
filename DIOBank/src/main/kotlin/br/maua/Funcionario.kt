@@ -1,8 +1,13 @@
 package br.maua
 
-import java.math.BigDecimal
+abstract class Funcionario(nome: String, cpf: String, val salario: Double): Pessoa(nome, cpf) {
 
-abstract class Funcionario(nome: String, cpf: String, val salario: BigDecimal): Pessoa(nome, cpf) {
+    protected abstract fun calculoAuxilio(): Double
 
-    protected abstract fun calculoAuxilio()
+    override fun toString(): String = """
+        Nome: $nome
+        CPF: $cpf
+        Salário: $salario
+        Auxílio: ${calculoAuxilio()}
+    """.trimIndent()
 }
