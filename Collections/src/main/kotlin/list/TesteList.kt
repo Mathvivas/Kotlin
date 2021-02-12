@@ -1,9 +1,9 @@
 package list
 
 fun main() {
-    val johnny = Funcionario("Johnny", 4000.0)
-    val hope = Funcionario("Hope", 6000.0)
-    val panam = Funcionario("Panam", 2000.0)
+    val johnny = Funcionario("Johnny", 4000.0, "CLT")
+    val hope = Funcionario("Hope", 6000.0, "PJ")
+    val panam = Funcionario("Panam", 2000.0, "CLT")
 
     val funcionarios = listOf(johnny, hope, panam)
 
@@ -11,18 +11,25 @@ fun main() {
 
     println()
 
-    println("find:")
+    println("Find:")
     println(funcionarios.find { it.nome == "Johnny" })
 
     println()
 
-    println("sort por salário:")
+    println("Sort por Salário:")
     funcionarios
         .sortedBy { it.salario }
         .forEach { println(it) }
+
+    println()
+
+    println("Group By:")
+    funcionarios
+        .groupBy { it.tipoContratacao }
+        .forEach { println(it) }
 }
 
-data class Funcionario(val nome: String, val salario: Double) {
+data class Funcionario(val nome: String, val salario: Double, val tipoContratacao: String) {
     override fun toString(): String =
         """
         Nome: $nome
