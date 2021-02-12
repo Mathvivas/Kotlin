@@ -20,8 +20,10 @@ fun main() {
 
     println("Sort por Salário:")
     funcionarios
-        .sortedBy { it.salario }
+        .sortedBy { it.salario }    // Cria uma nova coleção ordenada
         .forEach { println(it) }
+
+    //.sortBy --> Reorganiza os elementos na coleção
 
     println()
 
