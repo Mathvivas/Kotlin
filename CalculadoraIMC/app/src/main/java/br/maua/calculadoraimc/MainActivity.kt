@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.w("lifecycle", "entrei no CREATE - estou criando a tela")
+        // printado no Logcat
     }
 
     override fun onStart() {
