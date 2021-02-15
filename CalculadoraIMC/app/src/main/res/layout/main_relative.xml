@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   android:layout_width="match_parent"
-                                                   android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/titleTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMC"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            tools:ignore="MissingConstraints"/>
+
+    <EditText
+            android:id="@+id/pesoEDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Peso em Kg (Ex.: 81.7)"
+            android:drawableLeft="@drawable/ic_pregnant"
+            style="@style/input_style"
+            tools:ignore="MissingConstraints"/>
+
+    <EditText
+            android:id="@+id/alturaEDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Altura em m (Ex.: 1.78)"
+            style="@style/input_style"
+            tools:ignore="MissingConstraints"/>
+
+    <Button
+            android:id="@+id/calcularBTN"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="40dp"
+            android:textColor="@color/branco"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Calcular"
+            android:textAllCaps="true"
+            android:paddingVertical="20dp"
+            android:background="@color/colorPrimary"
+            tools:ignore="MissingConstraints"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
