@@ -23,6 +23,7 @@ class ContatoAdapter (
 
     override fun onBindViewHolder(holder: ContatoViewHolder, position: Int) {
         val contato = lista[position]
+        // holder.itemView.tvNome
         with (holder.itemView) {
             tvNome.text = contato.nome
             tvTelefone.text = contato.telefone

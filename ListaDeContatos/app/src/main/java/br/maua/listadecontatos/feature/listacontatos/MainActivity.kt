@@ -11,6 +11,7 @@ import br.maua.listadecontatos.bases.BaseActivity
 import br.maua.listadecontatos.feature.contato.ContatoActivity
 import br.maua.listadecontatos.feature.listacontatos.adapter.ContatoAdapter
 import br.maua.listadecontatos.feature.listacontatos.model.ContatosVO
+import br.maua.listadecontatos.singleton.ContatoSingleton
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Exception
 
@@ -20,8 +21,9 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        gerarListaDeContatos()
         setupToolBar(toolBar, "Lista de Contatos", false)
-        setupListView()
+        setupRecyclerView()
         setupOnClicks()
     }
 
@@ -30,8 +32,16 @@ class MainActivity : BaseActivity() {
         ivBuscar.setOnClickListener { onClickBuscar() }
     }
 
-    private fun setupListView() {
+    private fun setupRecyclerView() {
         recyclerView.layoutManager = LinearLayoutManager(this)
+        adapter = ContatoAdapter(this, ContatoSingleton.lista) { onClickItemRecyclerView(it) }
+        recyclerView.adapter = adapter
+    }
+
+    private fun gerarListaDeContatos() {
+        ContatoSingleton.lista.add(ContatosVO(1, "Fulano", "(21) 9908-1121"))
+        ContatoSingleton.lista.add(ContatosVO(2, "Ciclano", "(11) 9723-1234"))
+        ContatoSingleton.lista.add(ContatosVO(3, "Bugano", "(40) 9996-8974"))
     }
 
     override fun onResume() {
