@@ -22,7 +22,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Telefone do Contato"
                     android:id="@+id/tvTelefone"
-                    android:textColor="@color/branco"
+                    android:textColor="@color/branco"/>
         </LinearLayout>
 
 </LinearLayout>
