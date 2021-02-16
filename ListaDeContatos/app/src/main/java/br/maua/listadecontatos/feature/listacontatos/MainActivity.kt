@@ -60,7 +60,7 @@ class MainActivity : BaseActivity() {
         startActivity(intent)
     }
 
-    private fun onClickBuscar() {
+    private fun onClickBuscar(){
         val busca = etBuscar.text.toString()
         progress.visibility = View.VISIBLE
         Thread(Runnable {
@@ -68,15 +68,16 @@ class MainActivity : BaseActivity() {
             var listaFiltrada: List<ContatosVO> = mutableListOf()
             try {
                 listaFiltrada = ContatoApplication.instance.helperDB?.buscarContatos(busca) ?: mutableListOf()
-            } catch (ex: Exception) {
+            } catch (ex: Exception){
                 ex.printStackTrace()
             }
             runOnUiThread {
-                adapter = ContatoAdapter(this, listaFiltrada) { onClickItemRecyclerView(it) }
+                adapter = ContatoAdapter(this, listaFiltrada) {onClickItemRecyclerView(it)}
                 recyclerView.adapter = adapter
                 progress.visibility = View.GONE
-                Toast.makeText(this, "Buscando por $busca", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Buscando por $busca", Toast.LENGTH_SHORT).show()
             }
         }).start()
     }
+
 }
