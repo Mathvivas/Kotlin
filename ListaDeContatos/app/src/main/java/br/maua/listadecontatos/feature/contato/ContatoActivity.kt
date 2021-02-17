@@ -7,6 +7,7 @@ import br.maua.listadecontatos.application.ContatoApplication
 import br.maua.listadecontatos.bases.BaseActivity
 import br.maua.listadecontatos.feature.listacontatos.model.ContatosVO
 import kotlinx.android.synthetic.main.activity_contato.*
+import kotlinx.android.synthetic.main.activity_contato.toolBar
 
 class ContatoActivity: BaseActivity() {
     private var idContato: Int = -1

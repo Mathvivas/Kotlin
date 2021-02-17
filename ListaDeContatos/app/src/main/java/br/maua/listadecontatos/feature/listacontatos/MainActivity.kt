@@ -23,13 +23,17 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
         gerarListaDeContatos()
         setupToolBar(toolBar, "Lista de Contatos", false)
-        setupRecyclerView()
+        setupListView()
         setupOnClicks()
     }
 
     private fun setupOnClicks() {
         fab.setOnClickListener { onClickAdd() }
         ivBuscar.setOnClickListener { onClickBuscar() }
+    }
+
+    private fun setupListView() {
+        recyclerView.layoutManager = LinearLayoutManager(this)
     }
 
     private fun setupRecyclerView() {
